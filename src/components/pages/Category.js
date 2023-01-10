@@ -12,11 +12,18 @@ const Category = (props) => {
   } = props;
 
   return (
-    <div className="category-container">
-      <h5>{id}</h5>
-      <img alt="Food" src={image} className="category-img" />
+    <div className="layout-container">
+      <div className="button-container">
+        <h5>
+          {id}
+          )
+        </h5>
+        <div onClick={() => navigate(`/details/${name}`, { state: name })} role="presentation"><i className="fa-solid fa-arrow-right-long details-btn" /></div>
+      </div>
+      <div className="image-container">
+        <img alt="Food" src={image} className="food-img" />
+      </div>
       <h3 className="food-name">{name}</h3>
-      <button type="button" onClick={() => navigate(`/details/${name}`, { state: name })}>Details</button>
     </div>
   );
 };

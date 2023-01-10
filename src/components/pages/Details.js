@@ -16,19 +16,39 @@ const Details = () => {
   }, [dispatch]);
 
   return (
-    <div className="detail-container">
-      <h2>{foodsData.length}</h2>
-      <button type="button" onClick={() => navigate(-1)}>Back</button>
-      {
-        foodsData.map((food) => (
-          <div key={food.id}>
-            <h5>{food.id}</h5>
-            <img alt="Food" src={food.image} className="detail-img" />
-            <h3>{food.name}</h3>
-          </div>
-        ))
-      }
-    </div>
+    <main>
+      <div className="back-btn" role="presentation" onClick={() => navigate(-1)}>
+        <i className="fa-solid fa-arrow-left-long" />
+        {' '}
+        Back
+      </div>
+      <div className="categories-title">
+        <h2>
+          Category
+          {' '}
+          {location.state}
+        </h2>
+        <h3>
+          Foods
+          {' '}
+          (
+          {foodsData.length}
+          )
+        </h3>
+      </div>
+      <div className="grid">
+        {
+          foodsData.map((food) => (
+            <div key={food.id} className="layout-container">
+              <div className="image-container">
+                <img alt="Food" src={food.image} className="food-img" />
+              </div>
+              <h3 className="food-name">{food.name}</h3>
+            </div>
+          ))
+        }
+      </div>
+    </main>
   );
 };
 
