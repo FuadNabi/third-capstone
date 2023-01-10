@@ -116,3 +116,7 @@ main {
   align-items: center;
   gap: 5px;
 }
+
+.hide {
+  display: none;
+}

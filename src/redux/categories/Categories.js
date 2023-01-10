@@ -2,7 +2,7 @@ import Axios from 'axios';
 
 const FETCH_CATEGORIES = 'thirdcapstone/Categories/FETCH_CATEGORIES';
 
-const fetchCategories = (payload) => ({
+export const fetchCategories = (payload) => ({
   type: FETCH_CATEGORIES,
   payload,
 });

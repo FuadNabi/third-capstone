@@ -1,16 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Category from './Category';
 import { fetchCategoriesApi } from '../../redux/categories/Categories';
 
 function Home() {
   const categoriesData = useSelector((state) => state.categoriesReducer) || [];
+  const [searchCategory, applySearchCategory] = useState('');
+  const filteredCategories = categoriesData.filter(
+    (category) => category.name.toLowerCase().includes(searchCategory.toLowerCase()),
+  );
   const dispatch = useDispatch();
   useEffect(() => {
     if (categoriesData.length === 0) {
       dispatch(fetchCategoriesApi());
     }
   }, [dispatch]);
+  const handleChange = (e) => {
+    e.preventDefault();
+    applySearchCategory(e.target.value);
+  };
 
   return (
     <main>
@@ -23,12 +31,25 @@ function Home() {
           {categoriesData.length}
           )
         </h3>
+        <input
+          type="text"
+          name="searchItem"
+          placeholder="Search for a category"
+          data-search
+          onChange={handleChange}
+        />
       </div>
       <div className="grid">
         {
-      categoriesData.map((category) => (
-        <Category key={category.id} category={category} />
-      ))
+         searchCategory.length ? (
+           filteredCategories.map((category) => (
+             <Category key={category.id} category={category} />
+           ))
+         ) : (
+
+           categoriesData.map((category) => (
+             <Category key={category.id} category={category} />
+           )))
         }
       </div>
     </main>
