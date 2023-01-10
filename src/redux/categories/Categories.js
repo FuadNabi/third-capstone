@@ -10,7 +10,6 @@ const fetchCategories = (payload) => ({
 export const fetchCategoriesApi = () => async (dispatch) => {
   const returnValue = await Axios.get('https://www.themealdb.com/api/json/v1/1/categories.php');
   const data = returnValue.data.categories;
-  console.log(`hi${data}`);
   const categories = [];
   for (let i = 0; i < data.length; i += 1) {
     const name = data[i].strCategory;
@@ -24,7 +23,7 @@ export const fetchCategoriesApi = () => async (dispatch) => {
   dispatch(fetchCategories(categories));
 };
 
-const initialState = {};
+const initialState = [];
 
 const categoriesReducer = (state = initialState, action) => {
   switch (action.type) {

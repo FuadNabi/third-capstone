@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 const Category = (props) => {
+  const navigate = useNavigate();
+
   const {
     category: {
       id, name, image,
@@ -11,8 +14,9 @@ const Category = (props) => {
   return (
     <div className="category-container">
       <h5>{id}</h5>
-      <h3>{name}</h3>
       <img alt="Food" src={image} className="category-img" />
+      <h3 className="food-name">{name}</h3>
+      <button type="button" onClick={() => navigate(`/details/${name}`, { state: name })}>Details</button>
     </div>
   );
 };

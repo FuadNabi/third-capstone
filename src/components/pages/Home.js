@@ -11,13 +11,26 @@ function Home() {
       dispatch(fetchCategoriesApi());
     }
   }, [dispatch]);
+
   return (
     <main>
-      {
-        categoriesData.map((category) => (
-          <Category key={category.id} category={category} />
-        ))
-      }
+      <div className="categories-title">
+        <h2>Choose your favorite category</h2>
+        <h3>
+          Categories
+          {' '}
+          (
+          {categoriesData.length}
+          )
+        </h3>
+      </div>
+      <div className="grid">
+        {
+      categoriesData.map((category) => (
+        <Category key={category.id} category={category} />
+      ))
+        }
+      </div>
     </main>
   );
 }
