@@ -102,6 +102,8 @@ main {
   padding: 3px;
   border-radius: 50%;
   color: rgb(219, 143, 0);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .back-btn {
@@ -119,4 +121,37 @@ main {
 
 .hide {
   display: none;
+}
+
+.search-bar {
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+
+  .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .grid {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .details-btn:hover {
+    color: white;
+    background-color: rgb(219, 143, 0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: auto auto auto auto auto;
+  }
 }

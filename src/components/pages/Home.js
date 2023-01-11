@@ -35,7 +35,7 @@ function Home() {
           type="text"
           name="searchItem"
           placeholder="Search for a category"
-          data-search
+          className="search-bar"
           onChange={handleChange}
         />
       </div>
