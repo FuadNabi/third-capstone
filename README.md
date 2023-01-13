@@ -159,6 +159,6 @@ Give a **Star** if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/FuadNabi/third-capstone/blob/components/LICENSE) licensed.
+This project is [MIT](https://github.com/FuadNabi/third-capstone/blob/components/LICENSE) licensed.Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
