@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://63bea92097774011416d56b1--lucky-baklava-595536.netlify.app/)
+- [Live Demo Link](https://dev--lucky-baklava-595536.netlify.app/)
 - [Presentation](https://www.loom.com/share/835c81073f77465a8cb76146700bc73e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
