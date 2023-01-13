@@ -134,8 +134,21 @@ main {
     margin: 0 30px;
   }
 
+  .food-name {
+    width: 210px;
+  }
+
   .grid {
     grid-template-columns: auto auto auto;
+  }
+
+  .layout-container {
+    transition: 0.5s;
+  }
+
+  .layout-container:hover {
+    margin: 0 -3px;
+    box-shadow: rgba(214, 126, 10, 0.651) 0 -50px 36px -28px inset;
   }
 }
 
