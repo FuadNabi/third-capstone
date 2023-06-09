@@ -120,7 +120,7 @@ To run tests, run the following command:
 👤 **Fuad Nabiyev**
 
 - GitHub: [FuadNabi](https://github.com/FuadNabi)
-- Twitter: [FuadNebiyev2](https://twitter.com/FuadNabiyev_)
+- Twitter: [FuadNabiyev](https://twitter.com/FuadNabiyev_)
 - LinkedIn: [FuadNabiyev](https://www.linkedin.com/in/fuad-nabiyev/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
