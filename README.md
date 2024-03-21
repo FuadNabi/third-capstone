@@ -30,7 +30,7 @@
 
 # 📖 Book Store App <a name="about-project"></a>
 
-> Chief's Masterpieces - It is a web application that could provide the count of foods category. The app shows the count as per category (route) and all foods from the selected category.
+> Chief's Masterpieces - It is a web application that provides the count of food categories. The app shows the count as per category (route) and all foods from the selected category.
 # 👁‍🗨 Preview
 
 ![image](./src/images/Screenshot%202023-01-11%20135723.png)
