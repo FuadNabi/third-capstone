@@ -56,8 +56,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **You can see categories in this website and filter it by name in search bar**
-- **You can see how much categories and food website have**
+- **You can see categories on this website and filter them by name in the search bar**
+- **You can see how many categories and food websites have**
 - **You can see foods from the category you have selected**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
