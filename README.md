@@ -21,7 +21,7 @@
   - [Usage](#usage)
   - [Deployment](#triangular_flag_on_post-deployment)
   - [Run tests](#run-tests)
-- [👥 Authors](#authors)
+- [👥 Author](#authors)
 - [🔭 Future Features](#future-features)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
