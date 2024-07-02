@@ -21,7 +21,7 @@
   - [Usage](#usage)
   - [Deployment](#triangular_flag_on_post-deployment)
   - [Run tests](#run-tests)
-- [👥 Author](#authors)
+- [👥 Author](#author)
 - [🔭 Future Features](#future-features)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -115,7 +115,7 @@ To run tests, run the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 👤 **Fuad Nabiyev**
 
