@@ -113,7 +113,7 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+<!-- AUTHOR -->
 
 ## 👥 Author <a name="author"></a>
 
